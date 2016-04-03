@@ -6,5 +6,6 @@ public enum Words {
 	BATMAN,
 	SUPERMAN,
 	IRONMAN,
-	CAPTAIN_AMERICA
+	CAPTAIN_AMERICA,
+	ALL
 }

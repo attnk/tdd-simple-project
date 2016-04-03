@@ -15,6 +15,10 @@ public class WordsVo implements Serializable {
 	private int numberOfCharacters;
 	private Words word;
 	
+	public WordsVo() {
+		super();
+	}
+
 	public WordsVo(String definition, String phrase, String imageUrl, String wikiUrl, Words word) {
 		this.definition = definition;
 		this.phrase = phrase;

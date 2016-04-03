@@ -20,6 +20,6 @@ public class WordsDataController {
 	 */
 	@RequestMapping(value = "/data/{word}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public WordsVo getWordData(@PathParam(value = "{word}") String word) {
-		return null;
+		return new WordsVo();
 	}
 }
