@@ -1,5 +1,8 @@
 package com.tdd.simple.project.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.websocket.server.PathParam;
 
 import org.springframework.http.MediaType;
@@ -19,7 +22,7 @@ public class WordsDataController {
 	 * @return JSON com os dados da palavra informada.
 	 */
 	@RequestMapping(value = "/data/{word}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public WordsVo getWordData(@PathParam(value = "{word}") String word) {
-		return new WordsVo();
+	public List<WordsVo> getWordData(@PathParam(value = "{word}") String word) {
+		return new ArrayList<>();
 	}
 }
